@@ -1,0 +1,41 @@
+Var longeur;
+Var tmp;
+Var angle;
+Debut
+angle = 0-90;
+CouleurFond 13 39 167;
+longeur=20;
+tmp = longeur;
+Milieu;
+Epaisseur 2;
+Avance (0-longeur)/2;
+Tourne 0-angle;
+Avance longeur/2;
+Tourne angle;
+Avance 0-1;
+Tourne angle;
+Avance 1;
+BasPinceau;
+CouleurTrait 0 255 255;
+Tant que longeur Faire
+Debut
+longeur=longeur-1;
+Avance longeur;
+Tourne angle;
+Avance longeur;
+Tourne angle;
+Avance longeur;
+Tourne angle;
+Avance longeur;
+Tourne angle;
+Fin;
+CouleurTrait 255 0 0;
+BasPinceau;
+Avance tmp;
+Tourne angle;
+Avance tmp;
+Tourne angle;
+Avance tmp;
+Tourne angle;
+Avance tmp;
+Fin

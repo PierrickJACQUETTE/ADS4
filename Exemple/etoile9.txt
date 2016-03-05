@@ -1,0 +1,46 @@
+Var sommet;
+Var angle;
+Var distance;
+Var rayon;
+Var nombre;
+Var rouge;
+Var vert;
+Var bleu;
+Debut
+	sommet = 9;
+	angle = 180/sommet;
+	rayon = 200;
+	distance = 394;
+	nombre = 4;	
+	rouge=46;
+	vert=40;
+	bleu=250;
+	Tant que nombre Faire 
+		Debut
+			Milieu;
+			CouleurTrait rouge vert bleu;
+			BasPinceau;
+			Cercle rayon;
+			HautPinceau;
+			Avance rayon;
+			Tourne 0-(angle/2);
+			BasPinceau;
+			Tant que sommet Faire
+				Debut
+					sommet=sommet-1;
+					Tourne 0-(180-angle);
+					Avance distance;
+
+				Fin;
+			Tourne (angle/2);
+			CouleurTrait rouge vert bleu;
+			rayon = (rayon/3)*2;
+			distance = (distance/3)*2;
+			sommet = 9;
+			rouge = rouge+30; 
+			vert = 200;
+			bleu = bleu-50;
+			nombre = nombre -1;
+		Fin;
+	CouleurFond 150 50 200;
+Fin
